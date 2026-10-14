@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#edf2f5">
+<title>Computer Networks Seminar | S. B. Arts & K. C. P. Science College</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#cover" aria-label="Computer Networks home"><span class="brandmark">⌘</span><span>Computer <b>Networks</b></span></a>
+  <div class="top-actions"><span id="pageCount">01 / 06</span><button class="small-btn" id="prevBtn" aria-label="Previous section">←</button><button class="small-btn next" id="nextBtn" aria-label="Next section">Next →</button></div>
+</header>
+
+<main>
+<section class="page cover active" id="cover" data-title="Cover">
+  <div class="cover-grid">
+    <div class="cover-copy">
+      <div class="eyebrow"><span class="dot pink"></span><span class="dot orange"></span><span class="dot green"></span> COMPUTER SCIENCE · SEMINAR</div>
+      <p class="college-overline">B.L.D.E. ASSOCIATION'S</p>
+      <h2 class="college-name">S. B. ARTS &amp; K. C. P. SCIENCE COLLEGE</h2>
+      <p class="college-place">VIJAYAPURA – 586 103</p>
+      <h1>Computer<br><span>Networks</span></h1>
+      <p class="subtitle">Computer Networks and Types of Computer Networks</p>
+      <p class="year">Academic Year 2026–2027</p>
+      <form id="personalForm" class="personal-form">
+        <div class="form-heading">Presenter details <small>Editable</small></div>
+        <label>Name <input id="studentName" name="studentName" placeholder="Enter your name" autocomplete="name"></label>
+        <label>Registration No. <input id="regNo" name="regNo" placeholder="Enter registration number"></label>
+        <div class="two-fields">
+          <label>Class / Semester <input id="classSem" name="classSem" placeholder="e.g. B.Sc. V Semester"></label>
+          <label>Subject <input id="subject" name="subject" value="Computer Network"></label>
+        </div>
+        <button class="save-btn" type="submit">Save details on this page</button>
+        <p class="form-note" id="saveStatus" aria-live="polite">Details stay in this browser page; no account is needed.</p>
+      </form>
+      <button class="primary-btn" id="startBtn">Start exploring <span>↗</span></button>
+    </div>
+    <div class="cover-art" aria-label="Illustration of connected computer and phone">
+      <div class="orb"></div><div class="orbit-ring"></div>
+      <div class="laptop"><div class="screen"><div class="screenbar"></div><div class="network-lines"><i></i><i></i><i></i><i></i></div><div class="screen-nodes"><b></b><b></b><b></b><b></b></div></div><div class="base"></div></div>
+      <div class="phone"><div class="speaker"></div><div class="phone-symbol">⌁</div></div>
+      <div class="earbud e1"></div><div class="earbud e2"></div>
+      <div class="connect-label">Connected<br><b>devices</b></div>
+      <div class="art-caption">ONE WORLD · MANY CONNECTIONS</div>
+    </div>
+  </div>
+</section>
+
+<section class="page lesson" id="overview" data-title="Network basics">
+  <div class="section-heading"><p class="kicker">01 / THE BASICS</p><h2>What is a <span>computer network?</span></h2><p>A computer network connects devices so they can exchange information and share resources using wired or wireless links.</p></div>
+  <div class="overview-grid">
+    <div class="info-card"><div class="icon">▣</div><h3>Devices</h3><p>Computers, phones, printers, servers and smart devices.</p><button class="reveal-btn" data-reveal="devicesExample">Show example +</button><p class="example hidden" id="devicesExample">Example: a laptop sends a document to a printer connected to the same network.</p></div>
+    <div class="info-card"><div class="icon">⌁</div><h3>Connection media</h3><p>Ethernet cables, fibre-optic cables and wireless radio signals.</p><button class="reveal-btn" data-reveal="mediaExample">Show example +</button><p class="example hidden" id="mediaExample">Example: Wi-Fi links a phone to a router without a physical cable.</p></div>
+    <div class="info-card"><div class="icon">⇄</div><h3>Protocols</h3><p>Rules that help devices format, address and exchange data.</p><button class="reveal-btn" data-reveal="protocolExample">Show example +</button><p class="example hidden" id="protocolExample">Example: TCP/IP supports communication across many interconnected networks.</p></div>
+  </div>
+  <div class="connection-demo"><div class="demo-label">CONNECTION FLOW</div><div class="flow-line"><span>Device</span><i>→</i><span>Link</span><i>→</i><span>Network</span><i>→</i><span>Shared data</span></div></div>
+</section>
+
+<section class="page lesson" id="types" data-title="Network types">
+  <div class="section-heading"><p class="kicker">02 / NETWORK FAMILIES</p><h2>Four scales of <span>connection.</span></h2><p>Choose a network type to see how devices connect and where it is used.</p></div>
+  <div class="type-grid">
+    <article class="type-card pan"><div class="type-meta"><span>PAN</span><small>PERSONAL AREA NETWORK</small></div><h3>Your personal space</h3><p>Connects personal devices over a short distance.</p><div class="device-scene"><div class="device phone-device">Phone</div><div class="device buds-device">Earbuds</div><div class="device watch-device">Watch</div><svg viewBox="0 0 320 110" aria-hidden="true"><path d="M75 55 Q160 0 242 53 M75 55 Q160 110 242 53" /></svg><div class="signal-dot"></div></div><div class="photo-strip"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=320&q=80" alt="Smartphone"><figcaption>Phone</figcaption></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=320&q=80" alt="Wireless earbuds"><figcaption>Earbuds</figcaption></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=320&q=80" alt="Smart watch"><figcaption>Watch</figcaption></figure></div><button class="detail-btn" data-target="panDetail">Explore PAN ↗</button><div class="detail hidden" id="panDetail"><b>How it connects:</b> Bluetooth or a personal hotspot links a phone with earbuds, a watch or a laptop. <b>Example:</b> listening to music from a phone through wireless earbuds.</div></article>
+    <article class="type-card lan"><div class="type-meta"><span>LAN</span><small>LOCAL AREA NETWORK</small></div><h3>A room or building</h3><p>Connects computers and shared resources in a home, lab or office.</p><div class="device-scene"><div class="device pc-device">PC 01</div><div class="device switch-device">Switch</div><div class="device pc2-device">PC 02</div><div class="device printer-device">Printer</div><svg viewBox="0 0 320 110" aria-hidden="true"><path d="M70 26 L160 55 L252 25 M70 82 L160 55 L252 82" /></svg><div class="signal-dot"></div></div><div class="photo-strip"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=320&q=80" alt="Laptop computer"><figcaption>Computer</figcaption></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=320&q=80" alt="Network server equipment"><figcaption>Network equipment</figcaption></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=320&q=80" alt="Computer keyboard and workstation"><figcaption>Workstation</figcaption></figure></div><button class="detail-btn" data-target="lanDetail">Explore LAN ↗</button><div class="detail hidden" id="lanDetail"><b>How it connects:</b> Ethernet cables or Wi-Fi link devices to a switch or wireless router. <b>Example:</b> a college computer lab sharing a printer and internet access.</div></article>
+    <article class="type-card man"><div class="type-meta"><span>MAN</span><small>METROPOLITAN AREA NETWORK</small></div><h3>Across a city</h3><p>Links separate local networks across a metropolitan area.</p><div class="device-scene city-scene"><div class="building b1">Campus A</div><div class="building b2">Office B</div><div class="building b3">Campus C</div><svg viewBox="0 0 320 110" aria-hidden="true"><path d="M70 65 Q160 -5 250 65 M70 65 Q160 120 250 65" /></svg><div class="signal-dot"></div></div><button class="detail-btn" data-target="manDetail">Explore MAN ↗</button><div class="detail hidden" id="manDetail"><b>How it connects:</b> provider infrastructure, often fibre-optic links, joins LANs around a city. <b>Example:</b> connecting multiple campuses in one metropolitan area.</div></article>
+    <article class="type-card wan"><div class="type-meta"><span>WAN</span><small>WIDE AREA NETWORK</small></div><h3>Across the world</h3><p>Connects networks across regions, countries and continents.</p><div class="device-scene"><div class="globe">◎</div><div class="continent c1">Region A</div><div class="continent c2">Region B</div><svg viewBox="0 0 320 110" aria-hidden="true"><path d="M70 55 Q160 -12 250 55 M70 55 Q160 125 250 55" /></svg><div class="signal-dot"></div></div><button class="detail-btn" data-target="wanDetail">Explore WAN ↗</button><div class="detail hidden" id="wanDetail"><b>How it connects:</b> routers forward packets between distant networks using carrier links, fibre or satellite connections. <b>Example:</b> the internet is the best-known global WAN.</div></article>
+  </div>
+</section>
+
+<section class="page lesson" id="comparison" data-title="Compare">
+  <div class="section-heading"><p class="kicker">03 / QUICK COMPARISON</p><h2>Small to <span>global.</span></h2><p>The key difference is the geographical area covered.</p></div>
+  <div class="table-wrap"><table><thead><tr><th>Type</th><th>Coverage</th><th>Typical technology</th><th>Example</th></tr></thead><tbody>
+  <tr><td><b class="pink-text">PAN</b></td><td>Personal space</td><td>Bluetooth</td><td>Phone + earbuds</td></tr>
+  <tr><td><b class="cyan-text">LAN</b></td><td>Room / building</td><td>Ethernet, Wi-Fi</td><td>Computer lab</td></tr>
+  <tr><td><b class="orange-text">MAN</b></td><td>City</td><td>Metro fibre links</td><td>Connected campuses</td></tr>
+  <tr><td><b class="violet-text">WAN</b></td><td>Country / world</td><td>Carrier links, fibre</td><td>The internet</td></tr>
+  </tbody></table></div>
+</section>
+
+<section class="page lesson" id="security" data-title="Uses and safety">
+  <div class="section-heading"><p class="kicker">04 / REAL-WORLD NETWORKS</p><h2>Connected with <span>care.</span></h2><p>Networks support learning, business and daily life. Good security habits help protect them.</p></div>
+  <div class="safety-grid"><article class="info-card"><div class="icon">⌂</div><h3>Education</h3><p>Online classes, digital libraries, shared printers and lab resources.</p></article><article class="info-card"><div class="icon">⇄</div><h3>Communication</h3><p>Messaging, video calls, file sharing and collaboration.</p></article><article class="info-card"><div class="icon">◇</div><h3>Security</h3><p>Use strong passwords, update devices and avoid suspicious links.</p></article></div>
+  <div class="feedback-box feedback-form-wrap"><div><p class="kicker">YOUR FEEDBACK</p><h3>Help improve this seminar</h3><p>Enter your details and comments. The form opens Gmail compose with your feedback pre-filled, or lets you copy it if Gmail is unavailable.</p></div>
+  <form id="feedbackForm" class="feedback-form">
+    <label>Your name<input id="feedbackName" required placeholder="Enter your name"></label>
+    <label>Registration number<input id="feedbackReg" placeholder="Optional registration number"></label>
+    <label>Class / semester<input id="feedbackClass" placeholder="e.g. B.Sc. V Semester"></label>
+    <label>Your email<input id="feedbackEmail" type="email" required placeholder="you@example.com"></label>
+    <label>Feedback<textarea id="feedbackMessage" required rows="4" placeholder="What worked well? What should be improved?"></textarea></label>
+    <div class="feedback-actions"><button class="primary-btn" type="submit">Open Gmail to send ↗</button><button class="save-btn" id="copyFeedback" type="button">Copy feedback text</button></div>
+    <p id="feedbackStatus" class="form-note" aria-live="polite">Feedback is addressed to adb78161@gmail.com. Nothing is sent until you send the email.</p>
+  </form></div>
+</section>
+</main>
+<footer><b>Computer Networks Seminar</b><br>B.L.D.E. Association's · S. B. Arts &amp; K. C. P. Science College, Vijayapura<br>Academic Year 2026–2027</footer>
+<script src="script.js"></script>
+</body>
+</html>
