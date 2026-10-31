@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b16">
+  <title>Computer Networks | Seminar 2026–27</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <nav class="navbar navbar-dark fixed-top nav-glass">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand fw-bold" href="#" onclick="showPage('cover')"><span class="brand-mark">N</span> NET<span class="brand-light">WORKS</span></a>
+      <div class="d-flex align-items-center gap-3">
+        <span class="nav-caption d-none d-sm-inline">SEMINAR · 2026—27</span>
+        <button class="btn btn-sm btn-outline-light rounded-pill px-3" onclick="showPage('feedback')">Feedback ↗</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="cover" class="page active">
+      <div class="container cover-wrap">
+        <div class="eyebrow"><span class="pulse-dot"></span> B.L.D.E. ASSOCIATION · VIJAYAPURA</div>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <p class="overline">COMPUTER SCIENCE SEMINAR / 01</p>
+            <h1 class="hero-title">COMPUTER<br><span>NETWORKS</span><i>.</i></h1>
+            <p class="hero-sub">A journey through the connections that bring our digital world together.</p>
+            <div class="hero-meta"><span> PAN · LAN · MAN · WAN </span><span class="meta-line"></span><span>ACADEMIC YEAR 2026—2027</span></div>
+          </div>
+          <div class="col-lg-5">
+            <div class="profile-panel">
+              <div class="panel-top"><span class="panel-kicker">PRESENTATION DETAILS</span><span class="panel-index">01 / 03</span></div>
+              <h2>Make it yours.</h2>
+              <p class="panel-help">Enter your details for the seminar cover page.</p>
+              <form id="coverForm">
+                <label class="form-label">Student / Presenter name</label>
+                <input class="form-control custom-input" id="studentName" placeholder="Your full name" required>
+                <div class="row g-3">
+                  <div class="col-6"><label class="form-label">Class / Course</label><input class="form-control custom-input" id="studentClass" placeholder="e.g. B.Sc. II"></div>
+                  <div class="col-6"><label class="form-label">Roll number</label><input class="form-control custom-input" id="rollNumber" placeholder="Your roll no."></div>
+                </div>
+                <label class="form-label mt-3">Presented to (optional)</label>
+                <input class="form-control custom-input" id="presentedTo" placeholder="Teacher / Department">
+                <button class="btn btn-neon w-100 mt-4" type="submit">ENTER THE EXPERIENCE <span>↗</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="college-footer"><strong>S. B. ARTS & K. C. P. SCIENCE COLLEGE</strong><span>VIJAYAPURA — 586 103</span></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="page">
+      <div class="container gallery-wrap">
+        <div class="gallery-heading">
+          <div><p class="overline">EXPLORE THE NETWORK</p><h2>Four types. <span>One connected world.</span></h2></div>
+          <div class="gallery-instruction"><span class="pulse-dot"></span> CLICK A CARD TO EXPLORE</div>
+        </div>
+        <div class="helix-stage" id="helixStage" aria-label="Rotating 3D helix gallery">
+          <div class="helix-orbit orbit-one"></div><div class="helix-orbit orbit-two"></div>
+          <div class="helix-core"><span>NETWORK<br>TOPOLOGY</span></div>
+          <button class="helix-card card-pan" data-type="PAN" aria-label="Explore PAN"><span class="card-no">01</span><span class="card-symbol">◉</span><span class="card-title">PAN</span><span class="card-desc">Personal Area Network</span><span class="card-arrow">↗</span></button>
+          <button class="helix-card card-lan" data-type="LAN" aria-label="Explore LAN"><span class="card-no">02</span><span class="card-symbol">⌘</span><span class="card-title">LAN</span><span class="card-desc">Local Area Network</span><span class="card-arrow">↗</span></button>
+          <button class="helix-card card-man" data-type="MAN" aria-label="Explore MAN"><span class="card-no">03</span><span class="card-symbol">⌁</span><span class="card-title">MAN</span><span class="card-desc">Metropolitan Area Network</span><span class="card-arrow">↗</span></button>
+          <button class="helix-card card-wan" data-type="WAN" aria-label="Explore WAN"><span class="card-no">04</span><span class="card-symbol">◎</span><span class="card-title">WAN</span><span class="card-desc">Wide Area Network</span><span class="card-arrow">↗</span></button>
+        </div>
+        <div class="gallery-bottom"><span>01 — 04 / NETWORK CATEGORIES</span><span>THE HELIX · DRAG OR USE ARROWS TO ROTATE</span><div class="rotation-controls"><button id="rotateLeft" aria-label="Rotate left">←</button><button id="rotateRight" aria-label="Rotate right">→</button></div></div>
+        <div class="text-center mt-4"><button class="text-link" onclick="showPage('feedback')">FINISH & SEND FEEDBACK <span>↗</span></button></div>
+      </div>
+    </section>
+
+    <section id="lesson" class="page">
+      <div class="container lesson-wrap">
+        <button class="back-link" onclick="showPage('gallery')">← BACK TO HELIX</button>
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5">
+            <p class="overline" id="lessonOverline">NETWORK TYPE / 01</p>
+            <h2 class="lesson-title" id="lessonTitle">PAN<span>.</span></h2>
+            <p class="lesson-subtitle" id="lessonSubtitle"></p>
+            <div class="lesson-copy" id="lessonDescription"></div>
+            <div class="fact-box"><span class="fact-label">TYPICAL RANGE</span><strong id="lessonRange"></strong></div>
+            <div class="fact-box"><span class="fact-label">COMMON EXAMPLES</span><strong id="lessonExamples"></strong></div>
+          </div>
+          <div class="col-lg-7">
+            <div class="diagram-panel">
+              <div class="diagram-head"><span>LIVE NETWORK MODEL</span><span class="live-tag"><i></i> DATA FLOW</span></div>
+              <div id="networkDiagram" class="network-diagram"></div>
+              <div class="diagram-foot"><span id="diagramCaption">Illustrative network connection</span><span>ANIMATED SCHEMATIC</span></div>
+            </div>
+            <div class="lesson-note"><span>↗</span><p id="lessonNote"></p></div>
+          </div>
+        </div>
+        <div class="lesson-nav"><button id="previousLesson" class="btn btn-outline-light rounded-pill px-4">← PREVIOUS</button><button id="nextLesson" class="btn btn-neon rounded-pill px-4">NEXT NETWORK →</button></div>
+      </div>
+    </section>
+
+    <section id="feedback" class="page">
+      <div class="container feedback-wrap">
+        <p class="overline">YOUR THOUGHTS MATTER / 03</p>
+        <h2 class="feedback-title">How was the<br><span>experience?</span></h2>
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="feedback-intro">Thank you for exploring the fundamentals of computer networks. Share your feedback to help improve this seminar.</p>
+            <div class="mail-card"><span class="mail-icon">✉</span><div><small>FEEDBACK WILL BE ADDRESSED TO</small><strong>aditya586120@gmail.com</strong></div></div>
+            <button class="back-link mt-4" onclick="showPage('gallery')">← RETURN TO HELIX</button>
+          </div>
+          <div class="col-lg-7">
+            <form id="feedbackForm" class="feedback-form">
+              <label class="form-label">Your name</label><input class="form-control custom-input" id="feedbackName" placeholder="Enter your name">
+              <label class="form-label mt-3">How would you rate this seminar?</label>
+              <div class="rating-row" role="group" aria-label="Rating">
+                <input type="radio" name="rating" id="r1" value="1"><label for="r1">1</label>
+                <input type="radio" name="rating" id="r2" value="2"><label for="r2">2</label>
+                <input type="radio" name="rating" id="r3" value="3"><label for="r3">3</label>
+                <input type="radio" name="rating" id="r4" value="4"><label for="r4">4</label>
+                <input type="radio" name="rating" id="r5" value="5" checked><label for="r5">5</label>
+                <span>/ 5</span>
+              </div>
+              <label class="form-label mt-3">Your feedback</label><textarea class="form-control custom-input" id="feedbackMessage" rows="5" placeholder="What did you like? What could be improved?" required></textarea>
+              <button class="btn btn-neon w-100 mt-4" type="submit">SEND FEEDBACK BY EMAIL <span>↗</span></button>
+              <p class="form-footnote">Your email app will open with the feedback filled in. Review and press Send to deliver it.</p>
+            </form>
+          </div>
+        </div>
+        <footer class="end-footer"><span>COMPUTER NETWORKS · 2026—2027</span><span>BUILT FOR LEARNING — S. B. ARTS & K. C. P. SCIENCE COLLEGE</span></footer>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
